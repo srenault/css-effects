@@ -1,0 +1,101 @@
+.object {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+
+.object.transition {
+    -webkit-transition-property: opacity, right;
+    -webkit-transition-duration: 5s, 10s;
+    -webkit-transition-delay: 2s;
+    -webkit-transition-timing-function: ease;
+}
+
+.object.animation {
+    -webkit-animation-name: turn;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: 10;
+    -webkit-transform: scale(2);
+    -webkit-transition-duration: 10s;
+}
+
+@-webkit-keyframes turn {
+    50% {
+        background: blue;
+        -webkit-transform: rotate3d(0,0,1,45deg);
+    }
+}
+
+.object.transform {
+    -webkit-transform: scale(4) translate(50px, 10px) rotate3d(0,0,1,45deg);
+}
+
+.object.transform-origin {
+    -webkit-transform-origin: 40px 40px;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.object.container-rotate {
+    height: 150px;
+    width: 150px;
+    -webkit-perspective: 500px;
+    -webkit-perspective-origin:bottom, right;
+    border: 1px solid black;
+}
+
+.object.container-rotate .transformed {
+    -webkit-transform: rotateY(45deg);
+    -webkit-transform-style: preserve-3d;
+    background: yellow;
+    width: 100%;
+    height: 100%;
+}
+
+.object.container-rotate .transformed .child {
+    -webkit-transform-origin: top left;
+    -webkit-transform: rotateX(40deg);
+    background-color: lime;
+    width: 100%;
+    height: 100%;
+}
+
+.red {
+    background: red;
+}
+
+.green {
+    background: green;
+}
+
+.blue {
+    background: blue;
+}
+
+.grey {
+    background: grey;
+}
+
+.black {
+    background: black;
+}
+
+#object1 {
+    top: 5%;
+}
+
+#object2 {
+    top: 40%;
+}
+
+#object3 {
+    top: 60%;
+}
+
+#object4 {
+    top: 70%;
+}
+
+#object5 {
+    left: 50%;
+    top: 90%;
+}

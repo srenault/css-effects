@@ -1,0 +1,7 @@
+window.setTimeout(function() {
+    var object1 = document.getElementById('object1');
+    var object2 = document.getElementById('object2');
+
+    object1.style.opacity=0;
+    object2.className += ', transform';
+}, 1000);

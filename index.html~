@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <link rel="stylesheet" media="screen" href="main.css">
+    <script src="main.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="object1" class="object transition red"></div>
+    <div id="object2" class="object green"></div>
+  </body>
+</html>

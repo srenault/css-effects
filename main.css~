@@ -1,0 +1,32 @@
+.object {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+
+.object.transition {
+    -webkit-transition-property: opacity, right;
+    -webkit-transition-duration: 5s, 10s;
+    -webkit-transition-delay: 2s;
+    -webkit-transition-timing-function: ease;
+}
+
+.object.transform {
+    -webkit-transform: scale(4) rotate3d(0, 0, 1, 45deg) translate(10px, 10px);
+}
+
+.red {
+    background: red;
+}
+
+.green {
+    background: green;
+}
+
+#object1 {
+    top: 5%;
+}
+
+#object2 {
+    top: 40%;
+}
