@@ -1,3 +1,4 @@
+
 window.setTimeout(function() {
     var object1 = document.getElementById('object1'),
         object2 = document.getElementById('object2'),
